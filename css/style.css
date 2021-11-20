@@ -21,8 +21,17 @@ img{
     font-size: 30px;
     font-weight: 700;
 }
+.lead{
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+.catch{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 80px 0 30px 0;
+    text-align: center;
+}
 /* header */
-
 figure{
     padding-top: 20px;
     padding-left: 60px;
@@ -77,20 +86,22 @@ nav{
 }
 /* メインビジュアル内ボタン */
 .btn1{
+    display: block;
     width: 300px;
     height: 65px;
     font-size: 23px;
     font-weight: 700;
-    background:#ffa250;
+    background-color:#ffa250;
     color: #333333;
     text-align: center;
-    padding: 18px 32px;
+    /* padding: 18px 32px; */
     position: absolute;
     top: 400px;
     right: 50px;
 }
 .btn1:hover {
     background: chocolate;
+    color: #acacac;
 }
 /* 確認する */
 .btn:hover {
@@ -101,10 +112,6 @@ nav{
     background-color: #F8F8F8;
     padding: 80px 60px 50px 60px;
 }
-p{
-    text-align: center;
-    padding: 40px 0 70px 0;
-}
 .concept-block{
     display: flex;
     justify-content: space-between;
@@ -113,18 +120,14 @@ p{
 .concept-block section{
     width: 32%;
 }
-.catch{
-    font-size: 30px;
-    font-weight: 700;
-    padding: 80px 0 30px 0;
-}
+
 /* スクールエリア */
 .school{
     background-color: #ffffff;
     background-image: linear-gradient(-180deg,#FFF0E2 50%,transparent 50%);
     background-size: 5px 5px;
     padding: 80px 60px 80px 60px;
-    position: relative;
+    /* position: relative; */
 }
 .title2{
     text-align: center;
@@ -132,16 +135,19 @@ p{
     font-weight: 600;
 }
 .school-area{
-    width: 1000px;
     display: flex;
     justify-content: space-between;
-    margin: 50px auto 50px auto ;
+    margin: 50px auto;
+}
+.school-block section{
+    width: 20%;
 }
 .school-block{
     width: 180px;
     height: 180px;
     background-color: #fddabe;
-    padding: auto 10px auto 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .school-box{
     height: 130px;
@@ -152,11 +158,11 @@ p{
 }
 /* 調整中 */
 .school-box p{
-    font-size: 18px;
+    font-size: 16px;
     margin: auto;
 }
 h4{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     text-align: center;
 }
@@ -170,18 +176,35 @@ h4{
     color: #333333;
     font-size: 20px;
     text-align: center;
+    /* トランジションの設定 */
+    transition-property: background-color opacity;
+    transition-duration: 1s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+    /* opacity: 1; */
 }
 .btn-inner {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     height: 45px;
 }
 .btn-inner img{
     position: absolute;
     top: 25px;
-    right: 30px;
+    right: 45px;
     color: #333333;
+    transition-property: right;
+    transition-duration: 0.6s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}
+.btn:hover{
+    background-color: chocolate;
+}
+.btn:hover .btn-inner img{
+    right: 40px;
 }
 /* 在校生卒業生の声エリア */
 .voice-area{
@@ -238,13 +261,10 @@ h4{
     flex-wrap: wrap;
 }
 /* work-box の画像のみ大きくしたい */
-/* .work-box img{
-    zoom: 150%;
-} */
 .work-box{
     font-size: 20px;
     width: 48%;
-    padding: 20px;
+    /* padding: 20px; */
 }
 .work-box a{
     display: block;
@@ -252,9 +272,13 @@ h4{
 .work-box a img{
     width: 100%;
 }
-.work-block section:hover .hover{
-    background-color: rgba(248, 150, 70, 0.993);
+.link{
+    text-align: center;
+    padding: 80px auto;
 }
+/* .work{
+    padding: 5px auto;
+} */
 
 /* フッター上のエリア */
 .closing-area{
@@ -262,9 +286,10 @@ h4{
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
+    padding: 50px auto 50px auto;
 }
-.closing-area{
-    padding: 50px auto;
+.closing-area a{
+
 }
 /* フッター */
 .footer{
