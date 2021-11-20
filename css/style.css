@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*  common
+--------------------------------*/
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    color: #333333;
+    font-size: 20px;
+    line-height: 1.615;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+/* header */
+
+figure{
+    padding-top: 20px;
+    padding-left: 60px;
+    display: block;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list a:hover{
+    color: #333333
+}
+.gray{
+    background-color: #acacac;
+    width: 230px;
+    height: 70px;
+    text-align: center;
+    float: right;
+    padding: 20px;
+}
+.orange{
+    background-color: #ffa250;
+    width: 230px;
+    height: 70px;
+    text-align: center;
+    float: right;
+    padding: 20px;
+}
+/* メインビジュアル */
+.main-area{
+    height: 500px;
+    background:url(../img/main.jpg)no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.page-title{
+    color: #ED6C00;
+    font-size: large;
+    font-weight: 600;
+    position: absolute;
+    top: 160px;
+    left: 250px;
+}
+.sub-title{
+    color: #ED6C00;
+    font-size: xx-large;
+    font-weight: 650;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    line-height: 1.1;
+}
+/* メインビジュアル内ボタン */
+.btn1{
+    width: 300px;
+    height: 65px;
+    font-size: 23px;
+    font-weight: 700;
+    background:#ffa250;
+    color: #333333;
+    text-align: center;
+    padding: 18px 32px;
+    position: absolute;
+    top: 400px;
+    right: 50px;
+}
+.btn1:hover {
+    background: chocolate;
+}
+/* 確認する */
+.btn:hover {
+    background: chocolate;
+}
+/* コンセプトエリア */
+.concept-area{
+    background-color: #F8F8F8;
+    padding: 80px 60px 50px 60px;
+}
+p{
+    text-align: center;
+    padding: 40px 0 70px 0;
+}
+.concept-block{
+    display: flex;
+    justify-content: space-between;
+}
+/* 枠が重ならないように */
+.concept-block section{
+    width: 32%;
+}
+.catch{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 80px 0 30px 0;
+}
+/* スクールエリア */
+.school{
+    background-color: #ffffff;
+    background-image: linear-gradient(-180deg,#FFF0E2 50%,transparent 50%);
+    background-size: 5px 5px;
+    padding: 80px 60px 80px 60px;
+    position: relative;
+}
+.title2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.school-area{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 50px auto ;
+}
+.school-block{
+    width: 180px;
+    height: 180px;
+    background-color: #fddabe;
+    padding: auto 10px auto 10px;
+}
+.school-box{
+    height: 130px;
+    text-align: center;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+}
+/* 調整中 */
+.school-box p{
+    font-size: 18px;
+    margin: auto;
+}
+h4{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.btn{
+    display: block;
+    width: 300px;
+    height: 60px;
+    background-color: #FFAA62;
+    position: relative;
+    margin: 0 auto;
+    color: #333333;
+    font-size: 20px;
+    text-align: center;
+}
+.btn-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+}
+.btn-inner img{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    color: #333333;
+}
+/* 在校生卒業生の声エリア */
+.voice-area{
+    background-color: #FFF0E2;
+    background-image:radial-gradient(#ffdec3 20%, transparent 20%) ;
+    background-size: 10px 10px;
+    background-position: 0 0 10px 10px;
+    padding: 64px 0;
+}
+.content-item img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.content-wrap-1, .content-wrap-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content-wrap-1{
+    margin-bottom: 32px;
+}
+.content-wrap-2{
+    flex-direction: row-reverse;
+}
+.content-box{
+    width: 700px;
+    height: 300px;
+    background-color: #FFFAF4;
+    padding: 20px;
+}
+.text01{
+    font-size: 20px;
+}
+.text02{
+    font-size: 22px;
+    font-weight: 600;
+}
+.text03{
+    font-size: 20px;
+}
+/* 就職転職エリア */
+.work-area{
+    background-color: #f8f8f8;
+    padding: 80px;
+}
+.work-block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* work-box の画像のみ大きくしたい */
+/* .work-box img{
+    zoom: 150%;
+} */
+.work-box{
+    font-size: 20px;
+    width: 48%;
+    padding: 20px;
+}
+.work-box a{
+    display: block;
+}
+.work-box a img{
+    width: 100%;
+}
+.work-block section:hover .hover{
+    background-color: rgba(248, 150, 70, 0.993);
+}
+
+/* フッター上のエリア */
+.closing-area{
+    background-image: url(../img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.closing-area{
+    padding: 50px auto;
+}
+/* フッター */
+.footer{
+    padding: 80px 0;
+}
+small{
+    display: block;
+    font-size: 13px;
+    text-align: center;
+}
