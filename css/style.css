@@ -18,15 +18,16 @@ img{
 }
 .title{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 .lead{
+    font-size: 20px;
     text-align: center;
     padding: 40px 0 60px 0;
 }
 .catch{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     padding: 80px 0 30px 0;
     text-align: center;
@@ -70,7 +71,7 @@ nav{
 .page-title{
     color: #ED6C00;
     font-size: large;
-    font-weight: 600;
+    font-weight: 650;
     position: absolute;
     top: 160px;
     left: 250px;
@@ -78,7 +79,7 @@ nav{
 .sub-title{
     color: #ED6C00;
     font-size: xx-large;
-    font-weight: 650;
+    font-weight: 700;
     position: absolute;
     top: 200px;
     left: 250px;
@@ -86,18 +87,22 @@ nav{
 }
 /* メインビジュアル内ボタン */
 .btn1{
-    display: block;
+    /* display: block; */
     width: 300px;
     height: 65px;
     font-size: 23px;
     font-weight: 700;
     background-color:#ffa250;
+    border-radius: 10px;
+    border-bottom: 5px solid #e4711f;
     color: #333333;
     text-align: center;
-    /* padding: 18px 32px; */
+    padding: 13px 32px;
     position: absolute;
     top: 400px;
     right: 50px;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 .btn1:hover {
     background: chocolate;
@@ -175,7 +180,13 @@ h4{
     margin: 0 auto;
     color: #333333;
     font-size: 20px;
-    text-align: center;
+    font-weight: 600;
+    padding: 14px 30px;
+    border-radius: 10px;
+    border-bottom: 5px solid #e4711f;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    /* text-align: center; */
     /* トランジションの設定 */
     transition-property: background-color opacity;
     transition-duration: 1s;
@@ -186,9 +197,7 @@ h4{
 .btn-inner {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    height: 45px;
+    /* height: 45px; */
 }
 .btn-inner img{
     position: absolute;
@@ -286,15 +295,13 @@ h4{
     background-image: url(../img/footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
-    padding: 50px auto 50px auto;
+    height: 300px;
 }
-.closing-area a{
-
+.closing-area .btn{
 }
 /* フッター */
 .footer{
-    padding: 80px 0;
+    padding: 50px 0;
 }
 small{
     display: block;
