@@ -95,7 +95,7 @@ nav{
     background-color:#ffa250;
     border-radius: 10px;
     border-bottom: 5px solid #e4711f;
-    color: #333333;
+    color: #ffffff;
     text-align: center;
     padding: 13px 32px;
     position: absolute;
@@ -142,43 +142,55 @@ nav{
 .school-area{
     display: flex;
     justify-content: space-between;
-    margin: 50px auto;
+    padding: 60px 50px 80px 50px;
 }
-.school-block section{
-    width: 20%;
-}
+/* ボックスが重ならないようにしたい */
+/* .school-block section{
+    width: 18%;
+} */
 .school-block{
-    width: 180px;
-    height: 180px;
+    width: 18%;
+    /* width: 170px; */
     background-color: #fddabe;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    padding: 10px;
 }
 .school-box{
-    height: 130px;
+    height: 100px;
     text-align: center;
-    background-color: #e0e0e0;
-    display: flex;
-    justify-content: space-between;
+    background-color: #ececec;
+    margin: 15px 5px;
+    padding: 10px;
+}
+.arrow-icon{
+    left: 8px;
+    width: 15px;
+    height: 15px;
+    border-top: 5px solid rgb(238, 122, 13);
+    border-right: 5px solid rgb(238, 122, 13);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 /* 調整中 */
 .school-box p{
-    font-size: 16px;
-    margin: auto;
+    font-size: 15px;
 }
 h4{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     text-align: center;
+    color: #333333;
 }
 .btn{
     display: block;
     width: 300px;
     height: 60px;
-    background-color: #FFAA62;
+    /* background-color: #FFAA62; */
+    background-color: #ffa250;
     position: relative;
     margin: 0 auto;
-    color: #333333;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 600;
     padding: 14px 30px;
@@ -203,7 +215,6 @@ h4{
     position: absolute;
     top: 25px;
     right: 45px;
-    color: #333333;
     transition-property: right;
     transition-duration: 0.6s;
     transition-delay: 0;
@@ -231,9 +242,7 @@ h4{
 }
 .content-wrap-1, .content-wrap-2{
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    width: vw0;
+    justify-content: space-around;
     margin: 0 auto;
     text-align: center;
     padding: 50px 50px;
@@ -295,13 +304,13 @@ h4{
     background-image: url(../img/footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    padding-bottom: 50px;
 }
 .closing-area .btn{
 }
 /* フッター */
 .footer{
-    padding: 50px 0;
+    padding: 40px 0;
 }
 small{
     display: block;
