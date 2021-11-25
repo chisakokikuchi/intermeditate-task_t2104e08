@@ -113,9 +113,15 @@ nav{
     background: chocolate;
 }
 /* コンセプトエリア */
-.concept-area{
+.concept-wrap{
     background-color: #F8F8F8;
-    padding: 80px 60px 50px 60px;
+    padding: 60px 0;
+}
+.concept-area{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F8F8F8;
 }
 .concept-block{
     display: flex;
@@ -131,7 +137,7 @@ nav{
     background-color: #ffffff;
     background-image: linear-gradient(-180deg,#FFF0E2 50%,transparent 50%);
     background-size: 5px 5px;
-    padding: 80px 60px 80px 60px;
+    padding: 80px 60px;
     /* position: relative; */
 }
 .title2{
@@ -155,6 +161,10 @@ nav{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
 }
 .school-box{
     height: 100px;
@@ -162,25 +172,21 @@ nav{
     background-color: #ececec;
     margin: 15px 5px;
     padding: 10px;
+    font-size: 15px;
 }
-.arrow-icon{
+/* .arrow-icon{
     left: 8px;
     width: 15px;
     height: 15px;
     border-top: 5px solid rgb(238, 122, 13);
     border-right: 5px solid rgb(238, 122, 13);
     -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-/* 調整中 */
-.school-box p{
-    font-size: 15px;
+    transform: rotate(45deg); */
 }
 h4{
-    font-size: 16px;
+    /* font-size: 18px;
     font-weight: 600;
-    text-align: center;
-    color: #333333;
+    color: #333333; */
 }
 .btn{
     display: block;
@@ -266,7 +272,7 @@ h4{
     font-weight: 600;
 }
 .text03{
-    font-size: px;
+    font-size: 18px;
 }
 /* 就職転職エリア */
 .work-area{
