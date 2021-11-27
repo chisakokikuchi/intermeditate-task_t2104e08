@@ -166,6 +166,26 @@ nav{
     font-weight: 600;
     color: #333333;
 }
+.school-block .right{
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 15px 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    /* color: #555; */
+    /* font-size: 16px; */
+    background: #fddabe;
+  }
+  .school-block .right::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 15px solid #fddabe;
+  }
 .school-box{
     height: 100px;
     text-align: center;
